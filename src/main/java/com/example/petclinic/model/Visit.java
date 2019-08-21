@@ -20,7 +20,7 @@ public class Visit implements Modifiable{
         this.pet = null;
     }
 
-    public Visit(Long id, String date, String description, Pet pet, Owner owner, Vet vet) {
+    public Visit(Long id, String date, String description, Pet pet) {
         this.id = id;
         this.date = date;
         this.description = description;

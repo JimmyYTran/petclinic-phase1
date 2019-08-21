@@ -23,7 +23,7 @@ public class Pet implements Modifiable {
         this.owner = null;
     }
 
-    public Pet(Long id, String name, PetType petType, String birthday, ArrayList<Visit> visits, Owner owner) {
+    public Pet(Long id, String name, PetType petType, String birthday, Owner owner) {
         this.id = id;
         this.name = name;
         this.petType = petType;
