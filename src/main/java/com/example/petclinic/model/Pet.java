@@ -9,7 +9,6 @@ public class Pet implements Modifiable {
     private String name;
     private PetType petType;
     private String birthday;
-    private ArrayList<Visit> visits;
     private Owner owner;
 
     public Pet() {
@@ -21,7 +20,6 @@ public class Pet implements Modifiable {
         this.name = null;
         this.petType = null;
         this.birthday = null;
-        this.visits = null;
         this.owner = null;
     }
 
@@ -30,7 +28,6 @@ public class Pet implements Modifiable {
         this.name = name;
         this.petType = petType;
         this.birthday = birthday;
-        this.visits = visits;
         this.owner = owner;
     }
 
@@ -48,10 +45,6 @@ public class Pet implements Modifiable {
 
     public String getBirthday() {
         return birthday;
-    }
-
-    public ArrayList<Visit> getVisits() {
-        return visits;
     }
 
     public Owner getOwner() {
@@ -72,10 +65,6 @@ public class Pet implements Modifiable {
 
     public void setBirthday(String birthday) {
         this.birthday = birthday;
-    }
-
-    public void setVisits(ArrayList<Visit> visits) {
-        this.visits = visits;
     }
 
     public void setOwner(Owner owner) {

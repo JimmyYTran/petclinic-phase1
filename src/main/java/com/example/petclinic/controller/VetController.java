@@ -5,7 +5,7 @@ import com.example.petclinic.service.VetService;
 
 import java.util.List;
 
-public class VetController {
+public class VetController implements BasicController<Vet> {
 
     private VetService vetService;
 

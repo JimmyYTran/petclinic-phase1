@@ -5,7 +5,7 @@ import com.example.petclinic.repository.VetRepository;
 
 import java.util.List;
 
-public class VetService {
+public class VetService implements BasicService<Vet> {
 
     private VetRepository vetRepository;
 

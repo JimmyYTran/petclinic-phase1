@@ -8,8 +8,6 @@ public class Visit implements Modifiable{
     private String date;
     private String description;
     private Pet pet;
-    private Owner owner;
-    private Vet vet;
 
     public Visit() {
 
@@ -20,8 +18,6 @@ public class Visit implements Modifiable{
         this.date = null;
         this.description = null;
         this.pet = null;
-        this.owner = null;
-        this.vet = null;
     }
 
     public Visit(Long id, String date, String description, Pet pet, Owner owner, Vet vet) {
@@ -29,8 +25,6 @@ public class Visit implements Modifiable{
         this.date = date;
         this.description = description;
         this.pet = pet;
-        this.owner = owner;
-        this.vet = vet;
     }
 
     public Long getId() {
@@ -61,22 +55,6 @@ public class Visit implements Modifiable{
         this.pet = pet;
     }
 
-    public Owner getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
-
-    public Vet getVet() {
-        return vet;
-    }
-
-    public void setVet(Vet vet) {
-        this.vet = vet;
-    }
-
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
@@ -96,8 +74,6 @@ public class Visit implements Modifiable{
         sb.append(", date='").append(date).append('\'');
         sb.append(", description='").append(description).append('\'');
         sb.append(", pet='").append(pet.getName()).append('\'');
-        sb.append(", owner='").append(owner.getName()).append('\'');
-        sb.append(", vet='").append(vet.getName()).append('\'');
         sb.append('}');
         return sb.toString();
     }

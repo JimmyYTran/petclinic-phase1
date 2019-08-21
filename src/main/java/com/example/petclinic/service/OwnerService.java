@@ -5,7 +5,7 @@ import com.example.petclinic.repository.OwnerRepository;
 
 import java.util.List;
 
-public class OwnerService {
+public class OwnerService implements BasicService<Owner> {
 
     private OwnerRepository ownerRepository;
 
