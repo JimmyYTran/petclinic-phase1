@@ -46,9 +46,9 @@ These patterns ensure our software is extensible, robust, maintainable and reusa
 
 ###### Coding to Interfaces - Service
 * Inside your service package, create a new interface called `BasicService`.
-* `BasicServce` is a generic class that defines the following methods:
+* `BasicService` is a generic class that defines the following methods:
   - `T add(T t);`
-  - `T get(int id);`
+  - `T get(Long id);`
   - `T modify(T t);`
   - `boolean delete(T t);`
   - `List<T> getAll();`
@@ -58,7 +58,7 @@ These patterns ensure our software is extensible, robust, maintainable and reusa
 * Inside your controller package, create a new interface called `BasicController`.
 * `BasicController` is a generic interface that defines the following methods:
   - `T add(T t);`
-  - `T get(int id);`
+  - `T get(Long id);`
   - `T modify(T t);`
   - `boolean delete(T t);`
   - `List<T> getAll();`

@@ -47,6 +47,9 @@ public class PetClinicDriver {
         List<Owner> owners = ownerController.getAll();
         display(owners);
 
+        // delete owner
+        ownerController.delete(owner1);
+
 
         // Pet test data
         // TODO Add test data for pets
